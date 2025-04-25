@@ -52,8 +52,8 @@ def power_calculator(request):
                 power = "Invalid input. Please enter numerical values."
     return render(request, 'mathapp/math.html', {'power': power, 'intensity': intensity, 'resistance': resistance})
 ```
-```
 math.html
+```
 <html>
 <head>
 <meta charset='utf-8'>
@@ -118,8 +118,8 @@ Power : <input type="text" name="power" value="{{power}}"></input>(in W)<br/>
 </body>
 </html>
 ```
-```
 urls.py
+```
 from django.contrib import admin
     from django.urls import path
 from mathapp import views
